@@ -33,7 +33,7 @@ export async function POST(request: NextRequest) {
 
     // Send email using Resend
     const result = await resend.emails.send({
-      from: 'Milafiori Contact <onboarding@resend.dev>', // Update to your domain
+      from: 'Milafiori Contact <contact@osk-milafiori.pl>', // Update to your domain
       to: process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'milafiori2024@gmail.com',
       replyTo: body.email,
       subject: body.subject || `New contact from ${body.name}`,
