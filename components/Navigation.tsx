@@ -101,7 +101,7 @@ export function Navigation() {
               )}
             </motion.button>
             <motion.a
-              href="tel:+48500000000"
+              href="tel:+48609207867"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="flex items-center gap-2 rounded-lg bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 px-4 py-2 font-semibold text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-900 transition"
@@ -164,7 +164,7 @@ export function Navigation() {
                 ) : null}
               </button>
               <a
-                href="tel:+48 609 207 867"
+                href="tel:+48609207867"
                 className="mt-1 flex items-center gap-2 rounded-lg bg-blue-600 dark:bg-blue-700 px-4 py-3 font-semibold text-white hover:bg-blue-700 dark:hover:bg-blue-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-900 transition"
               >
                 <Phone className="h-4 w-4" />

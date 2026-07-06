@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Exo_2, JetBrains_Mono } from "next/font/google";
 import "leaflet/dist/leaflet.css";
 import "./globals.css";
-import { SITE_NAME, SITE_DESCRIPTION, SITE_URL } from "@/lib/constants";
+import { SITE_NAME, SITE_DESCRIPTION, SITE_URL, SITE_LOCALE } from "@/lib/constants";
 import { CookieConsent } from "@/components/CookieConsent";
 import { ThemeProvider } from "@/lib/theme-provider";
 
@@ -25,28 +25,60 @@ export const metadata: Metadata = {
   description: SITE_DESCRIPTION,
   metadataBase: new URL(SITE_URL),
   keywords: [
-    "driving school",
-    "driving lessons",
-    "driving course",
-    "driving license",
-    "driving instructor",
-    "category B",
-    "driving test",
+    "prawo jazdy Chełmża",
+    "prawo jazdy Toruń",
+    "szkoła nauki jazdy",
+    "lekcje jazdy",
+    "kurs na prawo jazdy",
+    "instruktor jazdy",
+    "kurs kat. B",
+    "kurs kat. A",
+    "kurs kat. A1",
+    "kurs kat. A2",
+    "prawo jazdy kategoria B",
+    "prawo jazdy kategoria A",
+    "prawo jazdy kategoria A1",
+    "prawo jazdy kategoria A2",
+    "prawo jazdy kategoria B Toruń",
+    "prawo jazdy kategoria A Toruń",
+    "prawo jazdy kategoria A1 Toruń",
+    "prawo jazdy kategoria A2 Toruń",
+    "prawo jazdy kategoria B Chełmża",
+    "prawo jazdy kategoria A Chełmża",
+    "prawo jazdy kategoria A1 Chełmża",
+    "prawo jazdy kategoria A2 Chełmża",
+    "kurs kat B",
+    "kurs kat A",
+    "kurs kat A1",
+    "kurs kat A2",
+    "kurs prawa jazdy kat B",
+    "kurs prawa jazdy kat A",
+    "kurs prawa jazdy kat A1",
+    "kurs prawa jazdy kat A2"
   ],
   authors: [{ name: SITE_NAME }],
   creator: SITE_NAME,
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: SITE_LOCALE,
     url: SITE_URL,
     siteName: SITE_NAME,
     title: SITE_NAME,
     description: SITE_DESCRIPTION,
+    images: [
+      {
+        url: `${SITE_URL}/logo.webp`,
+        alt: SITE_NAME,
+        width: 225,
+        height: 130,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: SITE_NAME,
     description: SITE_DESCRIPTION,
+    images: [`${SITE_URL}/logo.webp`],
   },
   robots: {
     index: true,
@@ -54,6 +86,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: SITE_URL,
+    languages: {
+      "pl-PL": SITE_URL,
+    },
   },
 };
 

@@ -100,7 +100,7 @@ export function ContactSection() {
               {/* Phone */}
               <motion.a
                 whileHover={{ x: 4 }}
-                href="tel:+48500000000"
+                href="tel:+48609207867"
                 className="flex items-center gap-4 p-4 rounded-lg hover:bg-white/20 dark:hover:bg-slate-700/20 transition"
               >
                 <div className="w-12 h-12 bg-blue-600 dark:bg-blue-600 rounded-lg flex items-center justify-center text-white">

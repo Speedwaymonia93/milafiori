@@ -1,9 +1,38 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { SITE_NAME, SITE_URL, SITE_LOCALE } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'Obowiązek Informacyjny | OSK Milafiori',
   description: 'Obowiązek informacyjny OSK Milafiori - informacje dotyczące przetwarzania danych osobowych zgodnie z RODO.',
+  openGraph: {
+    type: 'article',
+    locale: SITE_LOCALE,
+    url: `${SITE_URL}/obowiazek-informacyjny`,
+    title: 'Obowiązek Informacyjny | OSK Milafiori',
+    description: 'Obowiązek informacyjny OSK Milafiori - informacje dotyczące przetwarzania danych osobowych zgodnie z RODO.',
+    images: [
+      {
+        url: `${SITE_URL}/logo.webp`,
+        alt: SITE_NAME,
+        width: 225,
+        height: 130,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Obowiązek Informacyjny | OSK Milafiori',
+    description: 'Obowiązek informacyjny OSK Milafiori - informacje dotyczące przetwarzania danych osobowych zgodnie z RODO.',
+    images: [`${SITE_URL}/logo.webp`],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: `${SITE_URL}/obowiazek-informacyjny`,
+  },
 };
 
 export default function InformationObligationPage() {
@@ -34,7 +63,7 @@ export default function InformationObligationPage() {
               <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Obowiązek Informacyjny</h2>
               
               <p>
-                Administratorem danych osobowych Użytkownika udostępnionych za pośrednictwem Serwisu, czyli podmiotem decydującym o celach i sposobach ich przetwarzania, jest "MILAFIORI" MARCIN HOFFMANN, ul. Ks. Stefana Wincentego Frelichowskiego 14/19, 87-140 Chełmża, NIP 8792375204, (dalej jako Administrator).
+                Administratorem danych osobowych Użytkownika udostępnionych za pośredctwem Serwisu, czyli podmiotem decydującym o celach i sposobach ich przetwarzania, jest &quot;MILAFIORI&quot; MARCIN HOFFMANN, ul. Ks. Stefana Wincentego Frelichowskiego 14/19, 87-140 Chełmża, NIP 8792375204, (dalej jako Administrator).
               </p>
 
               <p>
@@ -42,7 +71,7 @@ export default function InformationObligationPage() {
               </p>
 
               <p>
-                Podanie danych osobowych za pośrednictwem Serwisu jest dobrowolne. Użytkownik ma prawo do cofnięcia wyrażonej zgody w dowolnym momencie poprzez kontakt z Administratorem <a href="mailto:milafiori2024@gmil.com" className="text-blue-600 dark:text-blue-400 hover:underline">milafiori2024@gmil.com</a>, bez wpływu na zgodność z prawem przetwarzania, którego dokonano na podstawie zgody przed jej cofnięciem.
+                Podanie danych osobowych za pośrednictwem Serwisu jest dobrowolne. Użytkownik ma prawo do cofnięcia wyrażonej zgody w dowolnym momencie poprzez kontakt z Administratorem <a href="mailto:milafiori2024@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline">milafiori2024@gmail.com</a>, bez wpływu na zgodność z prawem przetwarzania, którego dokonano na podstawie zgody przed jej cofnięciem.
               </p>
 
               <p>
@@ -109,7 +138,7 @@ export default function InformationObligationPage() {
               <div className="bg-blue-50 dark:bg-slate-800 p-6 rounded-lg mt-4">
                 <p>ul. Ks. Stefana Wincentego Frelichowskiego 14/19, 87-140 Chełmża</p>
                 <p>
-                  Email: <a href="mailto:milafiori2024@gmil.com" className="text-blue-600 dark:text-blue-400 hover:underline">milafiori2024@gmil.com</a>
+                  Email: <a href="mailto:milafiori2024@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline">milafiori2024@gmail.com</a>
                 </p>
               </div>
             </section>

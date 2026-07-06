@@ -83,7 +83,7 @@ export function Footer() {
             <h3 className="text-lg font-bold">Kontakt</h3>
             <div className="space-y-3">
               <a
-                href="tel:+48500000000"
+                href="tel:+48609207867"
                 className="flex items-center gap-3 text-gray-400 dark:text-slate-400 hover:text-blue-400 dark:hover:text-blue-300 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-sm"
               >
                 <Phone className="w-4 h-4 flex-shrink-0" />

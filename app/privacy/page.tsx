@@ -1,9 +1,38 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { SITE_NAME, SITE_URL, SITE_LOCALE } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'Polityka Prywatności | OSK Milafiori',
   description: 'Polityka prywatności OSK Milafiori - informacje o przetwarzaniu danych osobowych.',
+  openGraph: {
+    type: 'article',
+    locale: SITE_LOCALE,
+    url: `${SITE_URL}/privacy`,
+    title: 'Polityka Prywatności | OSK Milafiori',
+    description: 'Polityka prywatności OSK Milafiori - informacje o przetwarzaniu danych osobowych.',
+    images: [
+      {
+        url: `${SITE_URL}/logo.webp`,
+        alt: SITE_NAME,
+        width: 225,
+        height: 130,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Polityka Prywatności | OSK Milafiori',
+    description: 'Polityka prywatności OSK Milafiori - informacje o przetwarzaniu danych osobowych.',
+    images: [`${SITE_URL}/logo.webp`],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: `${SITE_URL}/privacy`,
+  },
 };
 
 export default function PrivacyPage() {
@@ -33,11 +62,11 @@ export default function PrivacyPage() {
               <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">POLITYKA PRYWATNOŚCI SERWISU oskmilafiori.pl</h2>
               
               <p>
-                Ochrona prywatności Użytkowników jest dla "MILAFIORI" MARCIN HOFFMANN szczególnie ważna. Z tego względu Użytkownicy Serwisu oskmilafiori.pl mają zagwarantowane wysokie standardy ochrony prywatności. "MILAFIORI" MARCIN HOFFMANN jako Administrator danych dba o bezpieczeństwo udostępnionych przez Użytkowników danych.
+                Ochrona prywatności Użytkowników jest dla &quot;MILAFIORI&quot; MARCIN HOFFMANN szczególnie ważna. Z tego względu Użytkownicy Serwisu oskmilafiori.pl mają zagwarantowane wysokie standardy ochrony prywatności. &quot;MILAFIORI&quot; MARCIN HOFFMANN jako Administrator danych dba o bezpieczeństwo udostępnionych przez Użytkowników danych.
               </p>
 
               <p>
-                Celem Administratora jest również należyte informowanie Użytkowników o prawach i obowiązkach związanych z przetwarzaniem danych osobowych, szczególnie wobec treści przepisów o ochronie danych osobowych określonych w rozporządzeniu Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27.04.2016r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (dalej jako „RODO"). Dlatego też, dbając o ochronę prywatności Użytkowników Serwisu, w niniejszym dokumencie Administrator informuje o podstawach prawnych przetwarzania danych osobowych przekazanych przez Użytkowników w związku z korzystaniem przez nich z Serwisu oskmilafiori.pl (dalej jako „Serwis"), sposobach zbierania, przetwarzania i ochrony danych osobowych, a także o prawach Użytkowników.
+                Celem Administratora jest również należyte informowanie Użytkowników o prawach i obowiązkach związanych z przetwarzaniem danych osobowych, szczególnie wobec treści przepisów o ochronie danych osobowych określonych w rozporządzeniu Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27.04.2016r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (dalej jako &quot;RODO&quot;). Dlatego też, dbając o ochronę prywatności Użytkowników Serwisu, w niniejszym dokumencie Administrator informuje o podstawach prawnych przetwarzania danych osobowych przekazanych przez Użytkowników w związku z korzystaniem przez nich z Serwisu oskmilafiori.pl (dalej jako &quot;Serwis&quot;), sposobach zbierania, przetwarzania i ochrony danych osobowych, a także o prawach Użytkowników.
               </p>
 
               <p>
@@ -45,7 +74,7 @@ export default function PrivacyPage() {
               </p>
 
               <p>
-                Administratorem danych osobowych udostępnionych przez Użytkownika w Serwisie oskmilafiori.pl jest "MILAFIORI" MARCIN HOFFMANN, ul. Ks. Stefana Wincentego Frelichowskiego 14/19, 87-140 Chełmża, NIP 8792375204, (dalej jako „Administrator").
+                Administratorem danych osobowych udostępnionych przez Użytkownika w Serwisie oskmilafiori.pl jest &quot;MILAFIORI&quot; MARCIN HOFFMANN, ul. Ks. Stefana Wincentego Frelichowskiego 14/19, 87-140 Chełmża, NIP 8792375204, (dalej jako &quot;Administrator&quot;).
               </p>
             </section>
 
@@ -138,7 +167,7 @@ export default function PrivacyPage() {
               </p>
 
               <p>
-                W przypadku chęci skorzystania przez Użytkownika z przysługujących mu praw jako podmiotu danych osobowych, może on się skontaktować z Administratorem za pomocą następujących danych kontaktowych: "MILAFIORI" MARCIN HOFFMANN, ul. Ks. Stefana Wincentego Frelichowskiego 14/19, 87-140 Chełmża, <a href="mailto:milafiori2024@gmil.com" className="text-blue-600 dark:text-blue-400 hover:underline">milafiori2024@gmil.com</a>.
+                W przypadku chęci skorzystania przez Użytkownika z przysługujących mu praw jako podmiotu danych osobowych, może on się skontaktować z Administratorem za pomocą następujących danych kontaktowych: &quot;MILAFIORI&quot; MARCIN HOFFMANN, ul. Ks. Stefana Wincentego Frelichowskiego 14/19, 87-140 Chełmża, <a href="mailto:milafiori2024@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline">milafiori2024@gmail.com</a>.
               </p>
 
               <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white mt-6">Prawo wniesienia skargi do organu nadzorczego</h3>
@@ -151,11 +180,11 @@ export default function PrivacyPage() {
               <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">PLIKI COOKIES</h2>
               
               <p>
-                Administrator informuje, iż podczas korzystania z Serwisu w urządzeniu końcowym Użytkownika zapisywane są krótkie informacje tekstowe zwane „cookies". Pliki „cookies" zawierają takie dane informatyczne jak: adres IP dotyczący Użytkownika, nazwa strony internetowej, z której pochodzą, czas przechowywania ich na urządzeniu końcowym Użytkownika, zapis parametrów i statystyki oraz unikalny numer. Pliki „cookies" są kierowane do serwera Serwisu za pośrednictwem przeglądarki internetowej zainstalowanej w urządzeniu końcowym Użytkownika.
+                Administrator informuje, iż podczas korzystania z Serwisu w urządzeniu końcowym Użytkownika zapisywane są krótkie informacje tekstowe zwane &quot;cookies&quot;. Pliki &quot;cookies&quot; zawierają takie dane informatyczne jak: adres IP dotyczący Użytkownika, nazwa strony internetowej, z której pochodzą, czas przechowywania ich na urządzeniu końcowym Użytkownika, zapis parametrów i statystyki oraz unikalny numer. Pliki &quot;cookies&quot; są kierowane do serwera Serwisu za pośrednictwem przeglądarki internetowej zainstalowanej w urządzeniu końcowym Użytkownika.
               </p>
 
               <p>
-                Pliki „cookies" wykorzystywane są w Serwisie w celu:
+                Pliki &quot;cookies&quot; wykorzystywane są w Serwisie w celu:
               </p>
               <ul className="list-disc list-inside space-y-2 ml-4">
                 <li>utrzymania technicznej poprawności i ciągłości sesji pomiędzy serwerem Serwisu a urządzeniem końcowym Użytkownika</li>
@@ -166,19 +195,19 @@ export default function PrivacyPage() {
               </ul>
 
               <p className="mt-4">
-                W ramach Serwisu stosowane są dwa rodzaje plików „cookies": „sesyjne" oraz „stałe". „Sesyjne" pliki „cookies" są plikami ulegającymi automatycznemu usunięciu z urządzenia końcowego Użytkownika Serwisu po jego wylogowaniu z Serwisu lub po opuszczeniu przez niego stron internetowych Serwisu lub po wyłączeniu przeglądarki internetowej. „Stałe" pliki „cookies" przechowywane są w urządzeniu końcowym Użytkownika przez czas określony w parametrach plików „cookies" lub do czasu ich usunięcia przez Użytkownika. „Stałe" pliki „cookies" instalowane są w urządzeniu końcowym Użytkownika wyłącznie za jego zgodą.
+                W ramach Serwisu stosowane są dwa rodzaje plików &quot;cookies&quot;: &quot;sesyjne&quot; oraz &quot;stałe&quot;. &quot;Sesyjne&quot; pliki &quot;cookies&quot; są plikami ulegającymi automatycznemu usunięciu z urządzenia końcowego Użytkownika Serwisu po jego wylogowaniu z Serwisu lub po opuszczeniu przez niego stron internetowych Serwisu lub po wyłączeniu przeglądarki internetowej. &quot;Stałe&quot; pliki &quot;cookies&quot; przechowywane są w urządzeniu końcowego Użytkownika przez czas określony w parametrach plików &quot;cookies&quot; lub do czasu ich usunięcia przez Użytkownika. &quot;Stałe&quot; pliki &quot;cookies&quot; instalowane są w urządzeniu końcowego Użytkownika wyłącznie za jego zgodą.
               </p>
 
               <p className="mt-4">
                 Administrator informuje, że:
               </p>
               <ul className="list-disc list-inside space-y-3 ml-4">
-                <li>przeglądarki internetowe domyślnie akceptują instalowanie plików „cookies" w urządzeniu końcowym Użytkownika. Każdy Użytkownik Serwisu może dokonać w dowolnym czasie zmiany ustawień dotyczących plików „cookies" w używanej przez niego przeglądarce internetowej</li>
-                <li>ograniczenie stosowania plików „cookies" przez Użytkownika może ujemnie wpłynąć na poprawność i ciągłość świadczenia Usług w Serwisie</li>
-                <li>pliki „cookies" zainstalowane w urządzeniu końcowym Użytkownika Serwisu mogą być wykorzystywane przez współpracujących z Administratorem reklamodawców lub partnerów biznesowych</li>
-                <li>pliki „cookies" można uznać za dane osobowe jedynie w powiązaniu z innymi danymi identyfikującymi tożsamość, udostępnionymi Administratorowi przez Użytkownika w ramach korzystania z Serwisu</li>
-                <li>dostęp do plików „cookies" przetwarzanych przez serwer Serwisu posiada wyłącznie Administrator</li>
-                <li>jeśli Użytkownik nie zgadza się na zapisywanie i odbieranie informacji w plikach „cookies", może zmienić zasady dotyczące plików „cookies" za pomocą ustawień swojej przeglądarki internetowej</li>
+                <li>przeglądarki internetowe domyślnie akceptują instalowanie plików &quot;cookies&quot; w urządzeniu końcowym Użytkownika. Każdy Użytkownik Serwisu może dokonać w dowolnym czasie zmiany ustawień dotyczących plików &quot;cookies&quot; w używanej przez niego przeglądarce internetowej</li>
+                <li>ograniczenie stosowania plików &quot;cookies&quot; przez Użytkownika może ujemnie wpłynąć na poprawność i ciągłość świadczenia Usług w Serwisie</li>
+                <li>pliki &quot;cookies&quot; zainstalowane w urządzeniu końcowym Użytkownika Serwisu mogą być wykorzystywane przez współpracujących z Administratorem reklamodawców lub partnerów biznesowych</li>
+                <li>pliki &quot;cookies&quot; można uznać za dane osobowe jedynie w powiązaniu z innymi danymi identyfikującymi tożsamość, udostępnionymi Administratorowi przez Użytkownika w ramach korzystania z Serwisu</li>
+                <li>dostęp do plików &quot;cookies&quot; przetwarzanych przez serwer Serwisu posiada wyłącznie Administrator</li>
+                <li>jeśli Użytkownik nie zgadza się na zapisywanie i odbieranie informacji w plikach &quot;cookies&quot;, może zmienić zasady dotyczące plików &quot;cookies&quot; za pomocą ustawień swojej przeglądarki internetowej</li>
               </ul>
             </section>
 
@@ -211,7 +240,7 @@ export default function PrivacyPage() {
 
               <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white mt-6">Informacje kontaktowe</h3>
               <p>
-                W celu uzyskania jakichkolwiek informacji dotyczących niniejszej Polityki Prywatności, Użytkownik może skontaktować się z Administratorem danych osobowych: "MILAFIORI" MARCIN HOFFMANN, ul. Ks. Stefana Wincentego Frelichowskiego 14/19, 87-140 Chełmża, z wykorzystaniem następujących danych kontaktowych: <a href="mailto:milafiori2024@gmil.com" className="text-blue-600 dark:text-blue-400 hover:underline">milafiori2024@gmil.com</a>.
+                W celu uzyskania jakichkolwiek informacji dotyczących niniejszej Polityki Prywatności, Użytkownik może skontaktować się z Administratorem danych osobowych: &quot;MILAFIORI&quot; MARCIN HOFFMANN, ul. Ks. Stefana Wincentego Frelichowskiego 14/19, 87-140 Chełmża, z wykorzystaniem następujących danych kontaktowych: <a href="mailto:milafiori2024@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline">milafiori2024@gmail.com</a>.
               </p>
               <p className="mt-4">
                 Ponadto istnieje również możliwość kontaktu drogą pocztową pod adresem: ul. Ks. Stefana Wincentego Frelichowskiego 14/19, 87-140 Chełmża.

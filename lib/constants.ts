@@ -3,7 +3,7 @@ import { Service } from './types';
 export const SITE_NAME = 'Ośrodek Szkolenia Kierowców Milafiori';
 export const SITE_DESCRIPTION =
   'Profesjonalna szkoła nauki jazdy oferująca kompleksowe kursy i lekcje jazdy w Chełmży i Toruniu i okolicach.';
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://oskmilafiori.pl';
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://osk-milafiori.pl';
 export const SITE_LOCALE = 'pl_PL';
 
 // Services/Courses offered
