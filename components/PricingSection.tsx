@@ -11,32 +11,32 @@ import {
 const pricingItems = [
   {
     name: 'Prawo jazdy kat. A',
-    price: '3600 zl',
+    price: '3800 zl',
     details: ['Kurs podstawowy', 'Teoria i praktyka', 'Przygotowanie do egzaminu'],
   },
   {
     name: 'Prawo jazdy kat. A2',
-    price: '3500 zl',
+    price: '3700 zl',
     details: ['Kurs podstawowy', 'Teoria i praktyka', 'Przygotowanie do egzaminu'],
   },
   {
     name: 'Prawo jazdy kat. A1',
-    price: '3400 zl',
+    price: '3600 zl',
     details: ['Kurs podstawowy', 'Teoria i praktyka', 'Przygotowanie do egzaminu'],
   },
   {
     name: 'Prawo jazdy kat. B',
-    price: '3300 zl',
+    price: '3600 zl',
     details: ['Kurs podstawowy', 'Teoria i praktyka', 'Przygotowanie do egzaminu'],
   },
   {
     name: 'Przejscie z kat. A1 do kat. A2',
-    price: '2100 zl',
+    price: '2500 zl',
     details: ['Kurs uzupelniajacy', 'Rozszerzenie uprawnien', 'Przygotowanie do egzaminu'],
   },
   {
     name: 'Przejscie z kat. A2 do kat. A',
-    price: '2100 zl',
+    price: '2500 zl',
     details: ['Kurs uzupelniajacy', 'Rozszerzenie uprawnien', 'Przygotowanie do egzaminu'],
   },
   {
