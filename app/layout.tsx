@@ -19,8 +19,8 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: SITE_NAME,
-    template: `%s | ${SITE_NAME}`,
+    default: `Szkoła Nauki Jazdy Chełmża i Toruń | OSK Milafiori`,
+    template: `%s | OSK Milafiori`,
   },
   description: SITE_DESCRIPTION,
   metadataBase: new URL(SITE_URL),

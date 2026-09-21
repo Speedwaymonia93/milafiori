@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Award, Building2, ShieldCheck, Users } from 'lucide-react';
+import { Award, Bike, Building2, BusFront, Car, ShieldCheck, Users } from 'lucide-react';
 import {
   containerVariants,
   itemVariants,
@@ -12,8 +12,8 @@ import {
 
 const strengths = [
   {
-    title: 'Doświadczony instruktor z pasją i zaangażowaniem',
-    description: 'Pracujemy z kursantami na różnych poziomach – od zupełnych podstaw po jazdy doszkalające przed egzaminem. Indywidualne podejście i cierpliwość to nasza wizytówka.',
+    title: 'Doświadczeni instruktorzy z pasją i zaangażowaniem',
+    description: 'Pracujemy z kursantami na różnych poziomach – od zupełnych podstaw po jazdy doszkalające przed egzaminem. Indywidualne podejście i cierpliwość całego zespołu to nasza wizytówka.',
     icon: Users,
   },
   {
@@ -52,7 +52,7 @@ export function AboutSection() {
               Szkoła, ktora uczy spokojnej i pewnej jazdy
             </h2>
             <p className="text-lg text-slate-600 dark:text-slate-400">
-              OSK Milafiori to szkoła jazdy stworzona z prawdziwego zamiłowania do nauczania. Jej założyciel, Marcin Hoffmann, postawił sobie za cel zapewnienie kursantom nauki na najwyższym poziomie – z dbałością o każdy etap szkolenia. Dysponuje wieloletnim doświadczeniem w branży motoryzacyjnej, doskonale rozumie potrzeby swoich uczniów i podchodzi do każdego z nich indywidualnie. Dzięki temu nauka jazdy przebiega sprawnie, skutecznie i w pełni bezpiecznie.
+              OSK Milafiori to szkoła jazdy stworzona z prawdziwego zamiłowania do nauczania. Jej założyciel, Marcin Hoffmann, wraz z zespołem doświadczonych instruktorów dba o każdy etap szkolenia. Indywidualne podejście, spokojna atmosfera i praktyczna wiedza sprawiają, że nauka jazdy przebiega sprawnie, skutecznie i bezpiecznie.
             </p>
             <p className="text-lg text-slate-600 dark:text-slate-400">
               Naszą siedzibę znajdziesz w Chełmży, przy ulicy Chełmińskiej 18. Do dyspozycji kursantów oddajemy nowoczesną salę wykładową oraz komfortowe biuro.
@@ -67,6 +67,37 @@ export function AboutSection() {
               sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
             />
+          </div>
+        </motion.div>
+
+        <motion.div
+          variants={slideInFromRightVariants}
+          className="mb-10 grid gap-8 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-700 dark:bg-slate-800 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] md:items-center md:p-6"
+        >
+          <div className="relative aspect-4/3 overflow-hidden rounded-xl">
+            <Image
+              src="/adam-photo.jpeg"
+              alt="Pan Adam, instruktor OSK Milafiori, przy samochodzie szkoleniowym"
+              fill
+              sizes="(max-width: 768px) 100vw, 45vw"
+              className="object-cover"
+            />
+          </div>
+
+          <div className="space-y-4">
+            <p className="text-sm font-bold uppercase tracking-widest text-blue-700 dark:text-blue-400">Nasz instruktor</p>
+            <h3 className="text-2xl font-black text-slate-900 dark:text-white md:text-3xl">Poznaj Pana Adama</h3>
+            <p className="text-lg text-slate-600 dark:text-slate-400">
+              Do naszego zespołu dołączył Pan Adam – instruktor nauki jazdy, który posiada doświadczenie w prowadzeniu pojazdów oraz uprawnienia do szkolenia kierowców kategorii B.
+            </p>
+            <p className="text-lg text-slate-600 dark:text-slate-400">
+              Pan Adam posiada również prawo jazdy na motocykle i autobusy. Dzięki temu może pochwalić się szerokim doświadczeniem za kierownicą różnych pojazdów i jeszcze lepiej dopasować szkolenie do potrzeb kursantów.
+            </p>
+            <div className="flex flex-wrap gap-3 pt-1 text-sm font-semibold text-slate-700 dark:text-slate-200">
+              <span className="inline-flex items-center gap-2 rounded-full bg-blue-50 px-3 py-2 dark:bg-blue-900/30"><Car className="h-4 w-4 text-blue-700 dark:text-blue-400" /> Kat. B</span>
+              <span className="inline-flex items-center gap-2 rounded-full bg-blue-50 px-3 py-2 dark:bg-blue-900/30"><Bike className="h-4 w-4 text-blue-700 dark:text-blue-400" /> Motocykle</span>
+              <span className="inline-flex items-center gap-2 rounded-full bg-blue-50 px-3 py-2 dark:bg-blue-900/30"><BusFront className="h-4 w-4 text-blue-700 dark:text-blue-400" /> Autobusy</span>
+            </div>
           </div>
         </motion.div>
 
