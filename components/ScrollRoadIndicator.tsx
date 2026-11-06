@@ -140,6 +140,7 @@ export function ScrollRoadIndicator() {
             alt="Wskaznik pozycji na stronie"
             width={36}
             height={36}
+            loading="eager"
             className="h-9 w-9 object-contain"
           />
         </div>

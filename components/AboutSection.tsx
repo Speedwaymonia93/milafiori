@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Award, Bike, Building2, BusFront, Car, ShieldCheck, Users } from 'lucide-react';
+import { Award, Bike, Building2, BusFront, Car, FileText, ShieldCheck, Users } from 'lucide-react';
 import {
   containerVariants,
   itemVariants,
@@ -57,6 +57,15 @@ export function AboutSection() {
             <p className="text-lg text-slate-600 dark:text-slate-400">
               Naszą siedzibę znajdziesz w Chełmży, przy ulicy Chełmińskiej 18. Do dyspozycji kursantów oddajemy nowoczesną salę wykładową oraz komfortowe biuro.
             </p>
+            <a
+              href="/STANDARDY%20OCHRONY%20MA%C5%81OLETNICH.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-md bg-blue-600 px-4 py-2 font-semibold text-white transition hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-900"
+            >
+              <FileText className="h-4 w-4" aria-hidden="true" />
+              STANDARDY OCHRONY MAŁOLETNICH (pdf)
+            </a>
           </div>
 
           <div className="relative h-72 w-full overflow-hidden rounded-2xl shadow-lg md:h-96">
@@ -65,6 +74,7 @@ export function AboutSection() {
               alt="Siedziba OSK Milafiori przy ulicy Chełmińskiej 18 w Chełmży"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
+              loading="eager"
               className="object-cover"
             />
           </div>
